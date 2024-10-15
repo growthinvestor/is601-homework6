@@ -7,7 +7,7 @@ from calculator.commands import AddCommand, SubtractCommand, ModulusCommand, Exp
 # Load environment variables from .env file
 load_dotenv()
 
-# Set up logging
+# Set up logging and adding logs to app.log under logs 
 log_level = os.getenv("LOG_LEVEL", "INFO").upper()
 valid_log_levels = {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"}
 
