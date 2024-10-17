@@ -136,7 +136,7 @@ def calculate_and_print(a_string=None, b_string=None, operation_string=None):
                 print("Invalid choice. Please select a valid option.")
                 continue
 
-            # Compute result and log it
+            # Compute result and log it in the app.log
             if command is not None:
                 result = calc.compute(command)
                 result_str = f"{result:.0f}" if result.is_integer() else str(result)
